@@ -73,6 +73,7 @@
                 <div data-i18n="Analytics">Inicio</div>
               </a>
             </li>
+            
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Gestion Turnos</span>
             </li>
@@ -86,23 +87,25 @@
                   <a href="<?= BASE_URL ?>views/gestionarturno/" class="menu-link">
                   <i class='menu-icon tf-icons bx bx-volume-full'></i>
                     <div data-i18n="atender_turno">Atender Turnos</div>
-                  </a>                  
-            <li class="menu-header small text-uppercase">
+                  </a>
+                </li>
+                <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Administracion</span>
             </li>
-                </li>
             <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/clientes/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-user'></i>
                     <div data-i18n="Clientes">Clientes</div>
                   </a>
                 </li>
-                <li class="menu-item">
+               <?php if($_SESSION['nivel'] == '1'){ ?>
+    <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/usuarios/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-user-rectangle' ></i>
                     <div data-i18n="Usuarios">Usuarios</div>
                   </a>
                 </li>
+    <?php } ?>
                 <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/servicios/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-category-alt' ></i>
@@ -115,7 +118,6 @@
                     <div data-i18n="Modulos">Modulos</div>
                   </a>
                 </li>
-            
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Reportes</span>
             </li>
@@ -144,7 +146,6 @@
                 <div class="nav-item d-flex align-items-center">
                 </div>
               </div>
-              <p style="padding-left: 78%;padding-top: 22px;"><?php echo $_SESSION['nombre']; ?></p>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -170,6 +171,12 @@
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>

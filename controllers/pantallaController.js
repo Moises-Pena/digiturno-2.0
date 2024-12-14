@@ -47,6 +47,7 @@ function TurosGestion() {
     }).then(function (response) {
       const tabla = document.querySelector("#tablaTurnos tbody");
       var datos = JSON.parse(response);
+      console.log(datos);
       if (datos.status == true) {
         while (tabla.firstChild) {
           tabla.removeChild(tabla.firstChild);

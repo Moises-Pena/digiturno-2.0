@@ -19,6 +19,16 @@ $(".select2").wrap('<div class="position-relative"></div>').select2({
 
   let _colors = [
     {"id":"blue","color":"#007bff","text":"blue"},
+    {"id":"indigo","color":"#6610f2","text":"indigo"},
+    {"id":"purple","color":"#696cff","text":"purple"},
+    {"id":"pink","color":"#e83e8c","text":"pink"},
+    {"id":"red","color":"#ff3e1d","text":"red"},
+    {"id":"orange","color":"#fd7e14","text":"orange"},
+    {"id":"yellow","color":"#ffab00","text":"yellow"},
+    {"id":"green","color":"#71dd37","text":"green"},
+    {"id":"teal","color":"#20c997","text":"teal"},
+    {"id":"cyan","color":"#03c3ec","text":"cyan"},
+    {"id":"white","color":"te #fff","text":"white"},
     {"id":"primary","color":"#696cff","text":"primary"},
     {"id":"secondary","color":"#8592a3","text":"secondary"},
     {"id":"success","color":"#71dd37","text":"success"},

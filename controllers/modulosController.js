@@ -231,7 +231,7 @@ function inactivarmodulo(id,estado) {
     }
 Swal.fire({
     title: 'Estas seguro?',
-    text: "Deseas "+mensaje+" este modulo!",
+    text: "Deseas "+mensaje+" este Servicio!",
     icon: 'question',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',

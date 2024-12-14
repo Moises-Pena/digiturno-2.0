@@ -6,7 +6,7 @@ function BuscarCliente() {
     var numerodocumento = document.getElementsByName('numerodocumento')[0].value;
     $.ajax({
         method: 'POST',
-        datatype: 'json',
+        dataType: 'json',
         data: {
             'accion': 'ObtenerCliente',
             'datos': numerodocumento

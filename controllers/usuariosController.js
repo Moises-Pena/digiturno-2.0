@@ -47,8 +47,8 @@ var table = $("#TablaUsuarios").DataTable({
         { "data": "apellidos" },
         { "data": "nombre_servicio" },
         { "data": "nombre_modulo" },
-        { "data": "estado" },
         { "data": "nombre_nivel" },
+        { "data": "estado" },
         { "data": "opciones" },
     ]
 });
@@ -146,7 +146,7 @@ $('#modalAgregarusuario').modal('show');
 }
 
 function seleccionarUsuario(idusuario) {
-document.querySelector(".modal-title").innerHTML = "Actualizar Usuario";
+document.querySelector(".modal-title").innerHTML = "Actualizar Cliente";
 document.getElementById("botondeeditar").classList.replace("btn-primary", "btn-success");
 $("#usuario").attr('disabled', 'disabled');
 $("#numero").attr('disabled', 'disabled');

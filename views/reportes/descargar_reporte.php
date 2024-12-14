@@ -21,7 +21,7 @@ require_once('../../config/conexion.php');
     </tr>
     <?php
     $query = mysqli_query($mysqli, "SELECT t.estado_turno, t.turno, s.nombre_servicio, CONCAT(c.documento,'-',c.numero) AS numero,
-    concat(c.pnombre,' ',c.papellido,' ',c.sapellido) AS nombre,t.tiempo_ingreso,t.tiempo_salida,
+    concat(c.pnombre,' ',c.papellido) AS nombre,t.tiempo_ingreso,t.tiempo_salida,
 	TIMEDIFF(t.tiempo_salida,t.tiempo_ingreso) AS diferencia
     FROM db_turnos t
     INNER JOIN db_clientes c ON t.documento=c.numero

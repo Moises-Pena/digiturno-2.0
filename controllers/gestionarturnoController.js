@@ -5,6 +5,7 @@ $('#finalizarturno').hide();
 DatosUsuario();
 function DatosUsuario() {
     var usuario = localStorage.getItem('usuario');
+    console.log(usuario);
     $.ajax({
         method: 'POST',
         datatype: 'json',

@@ -35,7 +35,7 @@ if ($_POST['accion'] == 'ObtenerCliente') {
 
 if ($_POST['accion'] == 'VerServicios') {
     require_once('../config/conexion.php');
-                $query = mysqli_query($mysqli, "SELECT id,nombre_servicio,color_servicio,icono_servicio,letra_servicio from db_servicios");
+                $query = mysqli_query($mysqli, "SELECT id,nombre_servicio,color_servicio,icono_servicio,letra_servicio from db_servicios where estado='A'");
                 $datos = array();
                 while ($row = $query->fetch_assoc()) {
                     $datos[] = $row;

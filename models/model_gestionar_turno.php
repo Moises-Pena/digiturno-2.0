@@ -80,7 +80,6 @@ if ($_POST['accion'] == 'Llamarturno') {
                 'numero' => $numero,
                 'pnombre' => $pnombre,
                 'papellido' => $papellido,
-                'sapellido' => $sapellido
             );
         } else {
             $respuesta = array(

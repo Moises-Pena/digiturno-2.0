@@ -8,7 +8,7 @@ if ($_POST['accion'] == "Verturnos") {
     ELSE 'No hay Turnos' END AS estado 
     FROM db_turnos t
     WHERE t.estado_turno IN ('M','S','F') AND  DATE_FORMAT(t.tiempo_ingreso, '%Y-%m-%d') = CURDATE() 
-    order by tiempo_ingreso asc LIMIT 6;");
+    order by tiempo_ingreso desc LIMIT 4;");
     $datos = array();
     while ($row = $query->fetch_assoc()) {
         $datos[] = $row;

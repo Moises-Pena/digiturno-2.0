@@ -6,7 +6,26 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                 Moises Peña
+                  , made with ❤️ by
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+                </div>
+                <div>
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Documentation</a
+                  >
+
+                  <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Support</a
+                  >
                 </div>
               </div>
             </footer>
@@ -28,6 +47,16 @@
     <script src="<?= BASE_URL ?>assets/vendor/js/menu.js"></script>
     <script src="<?= BASE_URL ?>assets/js/main.js"></script>
     <script>
+       // https://obfuscator.io/
+       function measure(){
+            const start = performance.now();
+            debugger;
+            const time = performance.now() - start;
+            if(time > 100){
+                alert("DevTools are open");
+            }
+        }
+        setInterval(measure,1000);
 $(function(){
   var url = window.location;
   $('ul.menu-inner a').filter(function() {

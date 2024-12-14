@@ -15,10 +15,10 @@ require "../template/header.php";
           </select>
         </div>
         <div class="col-4">
-          <input type="text" id="numerodocumento" name="numerodocumento" class="form-control" placeholder="Código de empleado" />
+          <input type="text" id="numerodocumento" name="numerodocumento" class="form-control" placeholder="Digite su código" />
         </div>
         <div class="col-4">
-          <button type="button" Onclick="BuscarCliente()" class="btn btn-primary float-right">Crear</button>
+          <button type="button" Onclick="BuscarCliente()" class="btn btn-primary float-right">Crear turno</button>
         </div>
       </div>
       <div id="verdatoscliente">
@@ -27,23 +27,26 @@ require "../template/header.php";
           <label class="form-label">Documento</label>
           <select id="documento" name="documento" class="form-select">
             <option value="" disabled>Seleccionar</option>
-            <option value="CC">Código de empleado</option>            
+            <option value="CC">Código de empleado</option>
           </select>
         </div>
         <div class="col-6 mb-2">
-          <label class="form-label">Número</label>
+          <label class="form-label">Código</label>
           <input type="text" id="numero" name="numero" class="form-control" />
         </div>
       </div>
       <div class="row">
         <div class="col-3 mb-2">
-          <label class="form-label">Nombres</label>
+          <label class="form-label">Nombre(s)</label>
           <input type="text" id="pnombre" name="pnombre" class="form-control" />
         </div>
+        
         <div class="col-3 mb-2">
-          <label class="form-label">Apellidos</label>
+          <label class="form-label">Apellido(s)</label>
           <input type="text" id="papellido" name="papellido" class="form-control" />
+          <input type="hidden" id="registrarcliente" name="registrarcliente"/>
         </div>
+      
       </div>
         <div id="contedinoservicios" class="row mt-4">
           

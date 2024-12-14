@@ -2,7 +2,7 @@
 
 if ($_POST['accion'] == "ListarClientes") {
     require_once('../config/conexion.php');
-    $query = mysqli_query($mysqli, "SELECT c.id,c.documento,c.numero,CONCAT(c.pnombre,' ',c.papellido,' ') AS cliente,
+    $query = mysqli_query($mysqli, "SELECT c.id,c.documento,c.numero,CONCAT(c.pnombre,' ',c.papellido) AS cliente,
     c.sexo,c.estado FROM db_clientes c");
     $datos = array();
     while ($row = $query->fetch_assoc()) {

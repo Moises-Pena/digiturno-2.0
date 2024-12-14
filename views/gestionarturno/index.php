@@ -23,26 +23,25 @@ require "../template/header.php";
                 <label class="form-label">Documento</label>
                 <select id="documento" name="documento" class="form-select">
                   <option value="" disabled>Seleccionar</option>
-                  <option value="CC">Código de empleado</option>
-                </select>
+                  <option value="CC">Código de empleado</option>}
+                  </select>
               </div>
               <div class="col-6 mb-2">
-                <label class="form-label">Número</label>
+                <label class="form-label">Numero</label>
                 <input type="text" id="numero" name="numero" class="form-control" />
               </div>
             </div>
             <div class="row text-center">
               <div class="col-4 mb-2">
-                <label class="form-label">Nombres</label>
+                <label class="form-label">Nombre(s)</label>
                 <input type="text" id="pnombre" name="pnombre" class="form-control" />
               </div>
               <div class="col-4 mb-2">
-                <label class="form-label">Apellidos</label>
+                <label class="form-label">Apellido(s)</label>
                 <input type="text" id="papellido" name="papellido" class="form-control" />
-              </div>
-              <div class="col-4 mb-2">
                 <input type="hidden" id="registrarcliente" name="registrarcliente" />
               </div>
+              
             </div>
           </div>
 

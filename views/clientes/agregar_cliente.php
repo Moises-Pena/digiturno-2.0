@@ -31,21 +31,23 @@
                                 </div>
                               <div class="row">
                                   <div class="col-3 mb-2">
-                                    <label class="form-label">Nombres</label>
+                                    <label class="form-label">Nombre(s)</label>
                                     <input
                                       type="text"
                                       id="pnombre" name="pnombre"
                                       class="form-control"
                                     />
                                   </div>
+                                  
                                   <div class="col-3 mb-2">
-                                    <label class="form-label">Apellidos</label>
+                                    <label class="form-label">Apellido(s)</label>
                                     <input
                                       type="text"
                                       id="papellido" name="papellido"
                                       class="form-control"
                                     />
                                   </div>
+                                  
                                 </div>
                                 <div class="row">
                                   <div class="col-6 mb-2">

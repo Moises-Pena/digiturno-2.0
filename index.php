@@ -22,7 +22,7 @@ if($cerrar_session){
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Sistema de Digiturno</title>
+    <title>Sistema de Turnos</title>
 
     <meta name="description" content="" />
 
@@ -48,9 +48,8 @@ if($cerrar_session){
             <div class="card-body">
               <div class="app-brand justify-content-center">
               </div>
-<!--changes-->
-              <h4 class="mb-2">Bienvenidos a Digiturno</h4>
-              <p class="mb-4">Sistema de gestion de turnos Web</p>
+              <h4 class="mb-2">Bienvenidos Modo Turno</h4>
+            
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Usuario</label>
